@@ -20,11 +20,11 @@
 
 2.install git gui
 
-...Launch console, goto git repositroy folder, run below command:
+Launch console, goto git repositroy folder, run below command:
 ```
 git gui
 ```
-...If you see error, do step 3, and run above command again
+If you see error, do step 3, and run above command again
 
 3.install git with brew
 
@@ -37,13 +37,13 @@ brew install git
 ```
 gitk
 ```
-...You should see git history
+You should see git history
 
 5.install diffmerge
 
-...When have any uncommitted changes, run
+When have any uncommitted changes, run
 ```
 git difftool
 ```
-...You should see the diffmerge window showing changed files
+You should see the diffmerge window showing changed files
 
