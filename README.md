@@ -17,23 +17,33 @@
   [mergetool]
           prompt = false
 ```
-2. install git gui
-Lunch console, goto git repositroy folder, run below command:
-``` git gui
-If you see error, do step 3, and run above command again
 
-Run command git gui in a repository folder, if you see errors.
-3. install git with brew
-``` brew install git
+2.install git gui
 
-4. install gitk
-``` gitk
-You should see git history
+...Launch console, goto git repositroy folder, run below command:
+```
+git gui
+```
+...If you see error, do step 3, and run above command again
 
-5. install diffmerge
-When have any uncommitted changes, run
-``` git difftool
-You will see the diffmerge window showing changed files
+3.install git with brew
 
+```
+brew install git
+```
 
+4.install gitk
+
+```
+gitk
+```
+...You should see git history
+
+5.install diffmerge
+
+...When have any uncommitted changes, run
+```
+git difftool
+```
+...You should see the diffmerge window showing changed files
 
