@@ -2,7 +2,8 @@
 
 ## Git setup
 1.add below in ~/.gitconfig
-```  [alias]
+```
+  [alias]
           gui = !sh -c /usr/local/git/libexec/git-core/git-gui
   [diff]
           tool = diffmerge
