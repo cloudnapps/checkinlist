@@ -42,7 +42,32 @@ You should see git history
 
 5.install diffmerge
 
-When have any uncommitted changes, run
+Add diffmerge file to /usr/bin
+```
+#!/bin/sh
+## A little script to make it easier to launch DiffMerge from the command line.
+## Install this script into a folder in your path, such as /usr/bin or /usr/local/bin.
+##
+## Version 4.2.0.697
+## Copyright (C) 2003-2013 SourceGear LLC. All Rights Reserved.
+##############################################################################
+
+## Change DIFFMERGE_PATH to point to where you installed DiffMerge
+
+DIFFMERGE_PATH=/Applications/DiffMerge.app
+
+## The actual executable is hidden inside the .app bundle.
+
+DIFFMERGE_EXE=${DIFFMERGE_PATH}/Contents/MacOS/DiffMerge
+
+## Launch DiffMerge using the given command line arguments.  Use --help for
+## additional information or see the man page distributed along with this
+## shell script.
+
+exec ${DIFFMERGE_EXE} --nosplash "$@"
+```
+
+And then when you have any uncommitted changes, run
 ```
 git difftool
 ```
