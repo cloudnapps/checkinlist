@@ -1,12 +1,12 @@
 # checkinlist
 
-# Git setup
-install git gui
-install gitk
-install diffmerge
+## Git setup
+### install git gui
+### install gitk
+### install diffmerge
 
-add below in ~/.gitconfig
-  [alias]
+### add below in ~/.gitconfig
+```  [alias]
           gui = !sh -c /usr/local/git/libexec/git-core/git-gui
   [diff]
           tool = diffmerge
@@ -20,3 +20,4 @@ add below in ~/.gitconfig
           prompt = false
   [mergetool]
           prompt = false
+```
